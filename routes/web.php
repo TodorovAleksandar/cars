@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('cars',['name'=>'Aleksandar','age'=>29]);
 });
 
 Route::get('/about', function () {

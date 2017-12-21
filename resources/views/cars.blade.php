@@ -2,10 +2,11 @@
 <html lang="{{ app()->getLocale() }}">
     <head>
         
-        <title>Cars Project</title>
+        <title>cars</title>
 
     </head>
     <body>
-       <h1> Welcome $name!</h1>
+       <h1> Welcome {{$name}}</h1>
+       <p>I am {{$age}} years old</p>
     </body>
 </html>
