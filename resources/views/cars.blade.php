@@ -6,7 +6,15 @@
 
     </head>
     <body>
-       <h1> Welcome {{$name}}</h1>
-       <p>I am {{$age}} years old</p>
+       <ul>
+
+       @foreach($cars as $car)
+       <li>
+       <a href="{{route('cars',['id'=>$cars->id])}}"
+       {{$cars->name}}
+       </a>
+       </li>
+       @endforeach
+       </ul>
     </body>
 </html>

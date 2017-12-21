@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('cars',['name'=>'Aleksandar','age'=>29]);
-});
+Route::get('/cars','carscontroller@index')->name(all-cars);
 
-Route::get('/about', function () {
-    return view('about');
-});
+
+Route::get('/cars/{id}', ['as'=>'single-car','uses'=>'postcontroller@show']);
